@@ -1,0 +1,7 @@
+name: Print Node Version
+on: push
+jobs:
+    first-job:
+            runs-on: windows-latest
+            steps:
+                - run: node --version
