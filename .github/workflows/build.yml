@@ -13,3 +13,13 @@ jobs:
                 node-version: 16
             - run: npm install
             - run: npx eslint .
+    test-cases:
+        runs-on: windows-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+                with:
+                    node-version: 16
+            - run: npm install
+            - run: npm run test
+            - run: npx eslint .
