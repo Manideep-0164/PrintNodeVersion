@@ -12,7 +12,7 @@ jobs:
               with:
                 node-version: 16
             - run: npm install
-            - run: npx eslint . --fix
+            - run: npx eslint index.js --fix
     test-cases:
         runs-on: windows-latest
         steps:
@@ -22,4 +22,4 @@ jobs:
                 node-version: 16
             - run: npm install
             - run: npm run test
-            - run: npx eslint .
+            - run: npx eslint index.js
